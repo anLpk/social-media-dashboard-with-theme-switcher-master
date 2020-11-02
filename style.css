@@ -9,10 +9,19 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
 }
+
+/* Body BG Color Change */
+.light-theme {
+    background-color: var(--White)
+}
+  
+.active {
+    background-color: var(--Very-Dark-Blue-BG);
+}
   
 /* Dark Theme Color Values */
 :root {
-    --Very-Dark-Blue: hsl(230, 17%, 14%); /*(BG)*/
+    --Very-Dark-Blue-BG: hsl(230, 17%, 14%); /*(BG)*/
     --Very-Dark-Blue: hsl(232, 19%, 15%); /*(Top BG Pattern)*/
     --Dark-Desaturated-Blue: hsl(228, 28%, 20%); /*(Card BG)*/
     --Desaturated-Blue: hsl(228, 34%, 66%); /*(Text)*/
@@ -149,6 +158,26 @@ h3 {
     color: var(--Bright-Red);
     font-weight: 700;
     font-size: 12px;
+}
+
+@media screen and (min-width: 1000px) {
+    hr {
+        display: none;
+    }
+
+    .first-part {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 20px;
+    }
+
+    .second-part {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+    }
 }
 
 /* Footer Style */
